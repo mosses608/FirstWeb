@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome || Comment Us</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" id="Image">
+        <div class="print1">
+            <h1>Dar Es Salaam</h1>
+            <h3>Kigamboni,Ferry
+            </h3>
+        </div>
+        <div class="print2">
+            <h1>bembabiodigester@gmail.com</h1>
+            <h3>office hours: 06:00AM - 08:00PM</h3>
+        </div>
+        <div class="print3">
+            <h1>+2755768272955</h1>
+            <h3>Call Us</h3>
+        </div>
+        <style>
+            @media(max-width:768px){
+                form{
+                    width: 100%;
+                }
+                #MyForm{
+                    width: 85%;
+                    margin-top: 5%;
+                }
+                #Image{
+                    width: 100%;
+                    height: 10%;
+                }
+                .print1, .print2,.print3{
+                    display: none;
+                }
+                #inpu{
+                    width: 100%;
+                }
+                #pink{
+                    background-color: blue;
+                }
+                .moh{
+                    font-size: 20px;
+                    top: 24%;
+                    position: absolute;
+                    right: 7%;
+                }
+                html{
+                    height: 100%;
+                }
+                #parag2{
+                    margin: 0%;
+                    margin-top: 0%;
+                    /*position: absolute;
+                    top: 94%;
+                    left: 30%;
+                    text-align: center;*/
+                }
+                footer p{
+                    font-weight: bold;
+                }
+            }
+            img{
+                width: 200px;
+                border: 1px solid lightseagreen;
+                float: left;
+                height: 115px;
+            }
+            .print1, .print2, .print3{
+                margin-top: 1rem;
+                float: left;
+                position: relative;
+                padding-left: 120px;
+            }
+            hr{
+                width: 100%;
+            }
+            h3{
+                text-align: center;
+            }
+            header{
+                background-color: #ddd;
+            }
+            form{
+                border: 1px solid black;
+                width: 550px;
+                border-radius: 0rem;
+                height: 500px;
+            }
+            form input,textarea,select{
+                width: 540px;
+                height: 60px;
+            }
+            button:hover{
+                background-color: yellow;
+                cursor: pointer;
+            }
+            center{
+                background-color: #ddd;
+            height: 600px;
+            }
+            *{
+                box-sizing: border-box;
+                margin: 0%;
+                border: 0%;
+            }
+            a{
+                position: absolute;
+                top: 16%;
+                text-decoration: none;
+                right: 1%;
+                font-size: 20px;
+            }
+            h3{
+                margin-top: 5%;
+            }a:hover{
+                color: yellow;
+            }
+            p,a{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            h3,h1{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+        </style>
+    </header>
+    <div id="pink">
+    <a href="home.html" class="moh">&#9776;Home</a>
+</div>
+    <hr><br><br>
+    <center>
+    <form action="comment.php" method="POST" id="MyForm">
+        <p id="parag1">Leave your Comments here on Our Services..</p>
+        <input type="text" placeholder="Enter Your Names" name="Name" id="inpu"><br><br>
+        <input type="email" placeholder="Enter Your Email Address" name="Email" required id="inpu"><br><br>
+        <select name="Gender" id="inpu">
+            <option value="null">Choose</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        <input type="number" placeholder="Enter your Phone Number" id="inpu" name="PhoneNumber"><br><br>
+        <textarea name="Comment" placeholder="Leave Comments Here" id="inpu"></textarea><br><br>
+        <button type="submit">Send</button>
+    </form>
+    </center>
+    <center>
+        <footer>
+            <p id="parag2">Copyright &copy; bembabiodigester 2023, All Rights Reserved</p>
+        </footer>
+    </center>
+</body>
+</html>
